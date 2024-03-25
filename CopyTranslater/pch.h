@@ -6,7 +6,9 @@
 
 #ifndef PCH_H
 #define PCH_H
-
-// Fügen Sie hier Header hinzu, die vorkompiliert werden sollen.
+#include <iostream>
+#include <Windows.h>
+#include <string>
+#include <msclr/marshal_cppstd.h>
 
 #endif //PCH_H
