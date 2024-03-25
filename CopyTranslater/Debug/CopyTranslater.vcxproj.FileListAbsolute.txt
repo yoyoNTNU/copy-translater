@@ -1,0 +1,3 @@
+C:\Users\yoyo1\source\repos\CopyTranslater\CopyTranslater\Debug\CopyTranslater.vcxproj.AssemblyReference.cache
+C:\Users\yoyo1\source\repos\CopyTranslater\CopyTranslater\Debug\CopyTranslater.Form1.resources
+C:\Users\yoyo1\source\repos\CopyTranslater\CopyTranslater\Debug\CopyTranslater.vcxproj.GenerateResource.cache
