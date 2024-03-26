@@ -6,9 +6,10 @@
 
 #ifndef PCH_H
 #define PCH_H
+#include <windows.h>
+#include <wininet.h>
 #include <iostream>
-#include <Windows.h>
 #include <string>
 #include <msclr/marshal_cppstd.h>
-
+#include <sstream>
 #endif //PCH_H
