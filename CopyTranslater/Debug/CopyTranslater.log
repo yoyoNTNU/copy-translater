@@ -1,4 +1,4 @@
 ﻿  CppCLR_WinformsProjekt.cpp
-C:\Users\yoyo1\source\repos\CopyTranslater\CopyTranslater\Form1.h(297,36): warning C4101: 'e': unreferenced local variable
+C:\Users\yoyo1\source\repos\CopyTranslater\CopyTranslater\Form1.h(298,36): warning C4101: 'e': unreferenced local variable
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   CopyTranslater.vcxproj -> C:\Users\yoyo1\source\repos\CopyTranslater\Debug\CopyTranslater.exe

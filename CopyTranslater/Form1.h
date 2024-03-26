@@ -119,6 +119,7 @@ namespace CppCLRWinformsProjekt {
 			// 
 			// chinese
 			// 
+			this->chinese->BackColor = System::Drawing::SystemColors::Window;
 			this->chinese->Font = (gcnew System::Drawing::Font(L"Microsoft JhengHei", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
 			this->chinese->Location = System::Drawing::Point(17, 388);
@@ -182,7 +183,7 @@ namespace CppCLRWinformsProjekt {
 			this->button1->Location = System::Drawing::Point(1085, 323);
 			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(100, 29);
+			this->button1->Size = System::Drawing::Size(100, 40);
 			this->button1->TabIndex = 8;
 			this->button1->Text = L"翻譯";
 			this->button1->UseVisualStyleBackColor = true;
@@ -303,11 +304,12 @@ namespace CppCLRWinformsProjekt {
 								auto translation = translations[0];
 								if (translation.contains("text")) {
 									std::string translatedText = translation["text"];
-									array<Byte>^ bytes = gcnew array<Byte>(translatedText.size());
-									Runtime::InteropServices::Marshal::Copy(IntPtr(&translatedText[0]), bytes, 0, translatedText.size());
+									std::string zh_tw = translatedText;
+									array<Byte>^ bytes = gcnew array<Byte>(zh_tw.size());
+									Runtime::InteropServices::Marshal::Copy(IntPtr(&zh_tw[0]), bytes, 0, zh_tw.size());
 									System::Text::UTF8Encoding^ utf8 = gcnew System::Text::UTF8Encoding(true);
-									System::String^ zh = utf8->GetString(bytes);
-									chinese->Text = zh;
+									System::String^ show = utf8->GetString(bytes);
+									chinese->Text = show;
 								}
 								else {
 									chinese->Text = L"伺服器端異常，請稍後再試!";
